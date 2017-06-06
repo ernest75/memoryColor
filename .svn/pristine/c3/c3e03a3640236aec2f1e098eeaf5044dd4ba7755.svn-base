@@ -1,0 +1,534 @@
+package com.course.memorycolor;
+
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.TypedArray;
+import android.media.MediaPlayer;
+import android.os.Bundle;
+import android.os.Handler;
+import android.preference.PreferenceManager;
+import android.support.v4.content.res.ResourcesCompat;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.Toast;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Random;
+
+public class GameScreen extends AppCompatActivity {
+
+
+    private Context mContext = this;
+
+    private boolean mustScan = true;
+
+    //States of the game
+    enum GameState {
+        GameInactive, GameAnimating, GameUserPlay, GameIntialize
+    }
+
+    //Difficulty levels
+    enum GameDifficulty {
+        GameEasy, GameMedium, GameHard
+    }
+
+    //Variables member
+
+    //Declaration of MediaPlayer objects as private here to be able to acces it outside oncreate()
+    private MediaPlayer mpRightAnswer;
+    private MediaPlayer mpWrongAnswer;
+
+    private Menu mMenu;
+
+    ArrayList<Boolean> mPlayerState = new ArrayList<>();
+    int mCurrentPlayer;
+    private int mNumberOfPLayers;
+    ArrayList<String> mPlayerNames = new ArrayList<>();
+    //Array list that holds the sequence of colors to be shown
+    ArrayList<ArrayList<Integer>> mColorSequence = new ArrayList<ArrayList<Integer>>();
+
+    //Int that keeps the number of buttons clicked by the user, it's used to compare it with the index
+    // of the array of colors to known if the color it's the right one or not
+    int mNumClicksUser = 0;
+
+    //Variable that tels us the state of the game, initialized in inactive state
+    GameState mGameState = GameState.GameInactive;
+
+    //Variable that tels us the difficulty of the game, initialized on easy level by default
+    GameDifficulty mDifficulty = GameDifficulty.GameEasy;
+
+    //These set of variables are related to the animations and are initialized as on easy level by default
+    //the number of animations
+    int mNumberOfAnimations = 2;
+
+    //These three ints are related aswell and basically they determine the time that the buttons animations
+    //will take. They have to comply the rule mChangeButtonColorToOn + mAnimationsTime > mChangeButtonColorToOff.
+    //int that determines when the next set of animations will take part in ms
+    int mAnimationsTime = 1100;
+    //int that determines when ,in ms, the color of the button will change to the color version on selected
+    int mChangeButtonColorToOn = 1500;
+    //int that determines , in ms, when the color of the button will return to his default state
+    int mChangeButtonColorToOff = 2500;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_game_screen);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        mNumberOfPLayers = 1;
+
+        //Variable that tels us the state of the game, initialized in inactive state
+        mGameState = GameState.GameInactive;
+
+        //Initialization of MediaPLayer objects with the sounds to be reproduced either when the user response
+        //is correct or not
+        mpRightAnswer = MediaPlayer.create(this, R.raw.right_answer);
+        mpWrongAnswer = MediaPlayer.create(this, R.raw.wrong_answer);
+
+        //setting references to the buttons
+        final Button btnRed = (Button) findViewById(R.id.btn_red);
+        final Button btnBlue = (Button) findViewById(R.id.btn_blue);
+        final Button btnGreen = (Button) findViewById(R.id.btn_green);
+        final Button btnCyan = (Button) findViewById(R.id.btn_cyan);
+        final Button btnPink = (Button) findViewById(R.id.btn_pink);
+        final Button btnYellow = (Button) findViewById(R.id.btn_yellow);
+
+        //setting onClickListeners 4 all buttons
+        btnRed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                int colorNumber = Integer.parseInt(v.getTag().toString());
+                colorBtnClicked(colorNumber);
+            }
+        });
+        btnBlue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                int colorNumber = Integer.parseInt(v.getTag().toString());
+                colorBtnClicked(colorNumber);
+            }
+        });
+        btnGreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                int colorNumber = Integer.parseInt(v.getTag().toString());
+                colorBtnClicked(colorNumber);
+            }
+        });
+
+        btnCyan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                int colorNumber = Integer.parseInt(v.getTag().toString());
+                colorBtnClicked(colorNumber);
+            }
+        });
+        btnPink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                int colorNumber = Integer.parseInt(v.getTag().toString());
+                colorBtnClicked(colorNumber);
+            }
+        });
+
+        btnYellow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                int colorNumber = Integer.parseInt(v.getTag().toString());
+                colorBtnClicked(colorNumber);
+            }
+        });
+
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_game_screen, menu);
+        mMenu = menu;
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            Intent intent = new Intent(this, SettingsActivity.class);
+            startActivity(intent);
+            return true;
+
+
+        } else if (id == R.id.action_new_game) {
+
+            //checking witch icon it's already on the menu if it's play icon start a new game
+            if (mMenu.getItem(0).getIcon().getConstantState()
+                    .equals(getResources().getDrawable(android.R.drawable.ic_media_play).getConstantState())) {
+                mMenu.getItem(0).setIcon(getResources().getDrawable(R.drawable.ic_stop));
+
+                mNumberOfAnimations = getStaringAnimations();
+                gameStart();
+
+                //else means that it's icon stop who is visible so build a dialog to stop or not the ap`p
+
+            } else {
+
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                        mContext);
+
+                // set title
+                alertDialogBuilder.setTitle("EXIT ALERT");
+
+                // set dialog message
+                alertDialogBuilder
+                        .setMessage("Click yes to exit!")
+                        .setCancelable(false)
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                // if this button is clicked, close
+                                // current game
+                                //gameFinish();
+                                mMenu.getItem(0).setIcon(getResources().getDrawable(android.R.drawable.ic_media_play));
+                                mGameState = GameState.GameInactive;
+                                mNumClicksUser = 0;
+
+
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                // if this button is clicked, just close
+                                // the dialog box and do nothing
+                                dialog.cancel();
+                            }
+                        });
+                // create alert dialog
+                AlertDialog alertDialog = alertDialogBuilder.create();
+
+                // show it
+                alertDialog.show();
+
+
+            }
+
+
+        } else if (id == R.id.action_player_data) {
+            Intent intent = new Intent(this, PlayerData.class);
+            startActivityForResult(intent, 1);
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    //
+    //method to finish the game and reset all variables
+    private void gameFinish() {
+        mMenu.getItem(0).setIcon(getResources().getDrawable(android.R.drawable.ic_media_play));
+        mNumberOfAnimations = getStaringAnimations();
+        mNumClicksUser = 0;
+        mColorSequence.clear();
+        mGameState = GameState.GameInactive;
+    }
+
+    //method that returns the number of the first set of animations depending of the difficulty
+    public int getStaringAnimations() {
+        if (mDifficulty == GameDifficulty.GameEasy) {
+            return 2;
+        } else if (mDifficulty == GameDifficulty.GameMedium) {
+            return 3;
+        }
+
+        return 4;
+    }
+
+    public void gameStart() {
+
+        mCurrentPlayer = 0;
+
+        mPlayerState.clear();
+        for (int i = 0; i < mPlayerState.size(); i++) {
+            mPlayerState.add(Boolean.TRUE);
+        }
+
+        mNumberOfAnimations = getStaringAnimations();
+        mNumClicksUser = 0;
+        mGameState = GameState.GameAnimating;
+
+        mColorSequence.clear();
+        for (int i = 0; i < mNumberOfPLayers; i++) {
+            mColorSequence.add(new ArrayList<Integer>());
+        }
+
+        gameAnimation();
+
+    }
+
+    public void gameAnimation() {
+
+        mGameState = GameState.GameAnimating;
+
+
+        //Take reference of all the buttons on the layout
+        final Button btnRed = (Button) findViewById(R.id.btn_red);
+        final Button btnBlue = (Button) findViewById(R.id.btn_blue);
+        final Button btnGreen = (Button) findViewById(R.id.btn_green);
+        final Button btnCyan = (Button) findViewById(R.id.btn_cyan);
+        final Button btnPink = (Button) findViewById(R.id.btn_pink);
+        final Button btnYellow = (Button) findViewById(R.id.btn_yellow);
+
+        //Array to store all the buttons
+        final ArrayList<Button> btnArray = new ArrayList<>();
+
+        //Storage of the buttons
+        btnArray.add(btnRed);
+        btnArray.add(btnBlue);
+        btnArray.add(btnGreen);
+        btnArray.add(btnCyan);
+        btnArray.add(btnPink);
+        btnArray.add(btnYellow);
+
+        //Get the arraycolors
+        // final int [] drawablesOff = getBaseContext().getResources().getIntArray(R.array.drawables_off);
+        final int[] colorsOn = getBaseContext().getResources().getIntArray(R.array.colorsOn);
+        final TypedArray drawablesOff = getResources().obtainTypedArray(R.array.drawables_off);
+
+        //Creation of the object Random
+        Random rand = new Random();
+
+
+        //calculating sequence
+        if (mNumberOfAnimations == getStaringAnimations()) {
+            for (int i = 0; i < mNumberOfAnimations; i++) {
+                //Int to determine witch button it's going to be on sequence randomly
+                int random = getNextRandomColor(rand);
+                mColorSequence.get(mCurrentPlayer).add(random);
+
+            }
+        } else {
+            int random = getNextRandomColor(rand);
+            mColorSequence.get(mCurrentPlayer).add(random);
+
+
+        }
+
+        //Creating animations handler
+        if (mGameState == GameState.GameAnimating) {
+            for (int i = 0; i < mNumberOfAnimations; i++) {
+                final int indexOfColorSeq = i;
+                final Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        btnArray.get(mColorSequence.get(mCurrentPlayer).get(indexOfColorSeq))
+                                .setBackgroundColor(colorsOn[mColorSequence.get(mCurrentPlayer).get(indexOfColorSeq)]);
+
+                    }
+                }, i * mAnimationsTime + mChangeButtonColorToOn);
+
+                final Handler handler2 = new Handler();
+
+                handler2.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+
+                        btnArray.get(mColorSequence.get(mCurrentPlayer).get(indexOfColorSeq)).setBackground(ResourcesCompat.getDrawable(getResources()
+                                , drawablesOff.getResourceId(mColorSequence.get(mCurrentPlayer).get(indexOfColorSeq), 0), null));
+                    }
+                }, i * mAnimationsTime + mChangeButtonColorToOff);
+            }
+
+            Handler handlerChangeState = new Handler();
+            handlerChangeState.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    mGameState = GameState.GameUserPlay;
+                }
+            }, (mNumberOfAnimations - 1) * mAnimationsTime + mChangeButtonColorToOff);
+
+
+        }
+    }
+
+    //method that returns a random integer assuring that it's not repeated so there'nt will be the same color
+    //repeated on the sequence
+    private int getNextRandomColor(Random rand) {
+        int random = rand.nextInt(6);
+        if (mColorSequence.get(mCurrentPlayer).size() > 0) {
+            if (random == mColorSequence.get(mCurrentPlayer).get(mColorSequence.get(mCurrentPlayer).size() - 1)) {
+                while (random == mColorSequence.get(mCurrentPlayer).get(mColorSequence.get(mCurrentPlayer).size() - 1)) {
+                    random = rand.nextInt(6);
+                }
+
+            }
+        }
+        return random;
+    }
+
+
+    private void colorBtnClicked(int colorNumber) {
+        if (mGameState != GameState.GameUserPlay) {
+            return;
+        }
+
+
+        if (mColorSequence.get(mCurrentPlayer).get(mNumClicksUser) == colorNumber) {
+            //Si l'usuari clicka el boto correcte
+            if (mpRightAnswer.isPlaying()) {
+                Log.e("colorBtnClicked", "Inside if");
+                mpRightAnswer.stop();
+                try {
+                    mpRightAnswer.prepare();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                mpRightAnswer.start();
+            } else {
+                mpRightAnswer.start();
+            }
+
+
+            mNumClicksUser++;
+            //Mirem si l'usuari ha arribat al final de la sequencia
+            if (mColorSequence.get(mCurrentPlayer).size() == mNumClicksUser) {
+                goToNextPlayer();
+                //Comprobem si l'usuari es l'ultim
+                if (mCurrentPlayer == mNumberOfPLayers) {
+                    mNumberOfAnimations++;
+                }
+                mNumClicksUser = 0;
+                gameAnimation();
+
+            }
+
+        } else {
+            // L'usuari a clickat el boto incorrecte
+            Toast.makeText(getBaseContext(), "That's not the color m8!!!, Sorry :(  Game over!!", Toast.LENGTH_SHORT).show();
+            mGameState = GameState.GameInactive;
+
+            mpWrongAnswer.start();
+
+            //resetting values of the game
+            gameFinish();
+        }
+
+        Log.e("Valor tag", Integer.toString(colorNumber));
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        // To use the preferences when the activity starts and when the user navigates back from the settings activity.
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+
+        String difficulty = preferences.getString("level", null);
+
+
+        if (difficulty == null) {
+            difficulty = "Easy";
+        }
+
+        if (difficulty.compareTo("Easy") == 0) {
+            mDifficulty = GameDifficulty.GameEasy;
+            mChangeButtonColorToOn = 1500;
+            mChangeButtonColorToOff = 2500;
+            mAnimationsTime = 1100;
+
+        } else if (difficulty.compareTo("Medium") == 0) {
+            mDifficulty = GameDifficulty.GameMedium;
+            mAnimationsTime = 800;
+            mChangeButtonColorToOn = 1000;
+            mChangeButtonColorToOff = 1700;
+        } else if (difficulty.compareTo("Hard") == 0) {
+            mDifficulty = GameDifficulty.GameHard;
+            mChangeButtonColorToOn = 1000;
+            mChangeButtonColorToOff = 1500;
+            mAnimationsTime = 600;
+        } else {
+            mDifficulty = GameDifficulty.GameEasy;
+            mAnimationsTime = 1100;
+            mChangeButtonColorToOn = 1500;
+            mChangeButtonColorToOff = 2500;
+        }
+
+        Boolean soundSwitch = preferences.getBoolean("soundSwitch", true);
+
+        if (soundSwitch) {
+            mpRightAnswer.setVolume(1, 1);
+            mpWrongAnswer.setVolume(1, 1);
+
+        } else {
+            mpRightAnswer.setVolume(0, 0);
+            mpWrongAnswer.setVolume(0, 0);
+        }
+
+
+    }
+
+    public boolean goToNextPlayer() {
+
+        boolean found = false;
+        int count = 0;
+        while (!found && count < mNumberOfPLayers) {
+            mCurrentPlayer++;
+            if (mCurrentPlayer == mNumberOfPLayers) {
+                mCurrentPlayer = 0;
+            }
+            if (mPlayerState.get(mCurrentPlayer) == true) {
+                found = true;
+            } else {
+                count++;
+            }
+        }
+
+        if (count == mNumberOfPLayers) {
+            return false;
+        }
+        return true;
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+
+        if (requestCode == 1) {
+            if (resultCode == AppCompatActivity.RESULT_OK) {
+                mNumberOfPLayers = data.getIntExtra("numberOfPLayers", 1);
+                mPlayerNames = data.getStringArrayListExtra("namesArray");
+                for (int i = 0; i < mPlayerNames.size(); i++) {
+                    Log.e("Nom = ", mPlayerNames.get(i));
+                }
+            }
+            super.onActivityResult(requestCode, resultCode, data);
+        }
+    }
+}
+
+
+
+

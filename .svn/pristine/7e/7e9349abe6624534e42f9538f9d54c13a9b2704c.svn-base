@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">MemoryColor</string>
+    <string name="action_new_game">New Game</string>
+    <string name="action_options">Options</string>
+    <string name="action_difficulty">Difficulty</string>
+    <string name="title_activity_settings">Settings</string>
+
+
+    <string name="pref_levels_difficulty">Difficulty</string>
+    
+    <array name="pref_levels_difficulty_values">
+        
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+        
+    </array>
+    
+    <array name="pref_levels_difficulty_options">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+
+    </array>
+    
+    <string name="pref_levels_difficulty_default">Easy</string>
+    <string name="pref_levels_difficulty_key">level</string>
+
+    
+
+
+
+
+
+
+
+
+</resources>

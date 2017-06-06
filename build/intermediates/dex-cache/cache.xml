@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ernest\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_0a378e7f322814c07874123bf6713774da64133b\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ernest\.android\build-cache\44b8947803efa02498f858fa08f71755c0311afe\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\pre-dexed\release\classes_1025b62b52e82d4865fca06621df19dba557d12c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ernest\.android\build-cache\ff8565b5e4bb1ad893fb22326cec251079a08eb4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\pre-dexed\release\classes_6dc47a96212ceddd42c8f662cf4db67dcbf6cea7.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_63e250b25cb5c5ccd3a3d9d48ff7f74297f935c9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_961bba1aa039a6157614f313da37f5367d8f82e0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_db6bb700a65336a79b6500234822eff7c0cecb5d\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ernest\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\pre-dexed\release\support-annotations-23.4.0_0a378e7f322814c07874123bf6713774da64133b.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6b38fd1c0f33f86d3612f6706f88dbdcc4c5e14b">
+        <dex dex="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_9392013b576bf4a85a7144a6abf120fbbd3fdb14\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ernest\.android\build-cache\78b44076f35932b7d885f1bb942e2ceda400ba2b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\pre-dexed\release\classes_0a6aced1d2a8d60f7b5b08f6d1d29d07cba05a1a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ernest\.android\build-cache\a48dd7c566489668f2d58be5514c3dbf72f41b6a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\pre-dexed\release\classes_9c3b16f72c1c46938424f5d89b9746cf4f621f6b.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.4.0_6057880641bfd8b13cd44cb9319411007edee51c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_813237effe1eb9d87776b1c48e8f6916d59a7d1e\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ernest\.android\build-cache\54b13c7a460c1df69941aa643559e097b34cc0c7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\pre-dexed\release\classes_a4ef639ef1e146edb05fc45f1deade48dc0e5eaa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ernest\.android\build-cache\78c38ca415f67660cb14a023ce277714facaab1e\output\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\pre-dexed\release\internal_impl-23.4.0_1e14cde1878551a757f6b3b35633a2d1f6df3699.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_c52170cceab443793414e15d24f68dd6b1503d07\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7c60aacc1da53f0c7934c41943f8a7aa934f44f9">
+        <dex dex="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_a2951735dc2ac7d70f59b48b54e8f4d74a2a6704\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_05b8a4635c88bc30672da2eccd5920a8ddf8bb2e\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Ernest\.android\build-cache\78c38ca415f67660cb14a023ce277714facaab1e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\PROGRAMACIO\first steps\MemoryColor\app\build\intermediates\pre-dexed\release\classes_a5533d39caead203579ecbfc3d2ce036d603b80b.jar" />
+    </item>
+
+</items>

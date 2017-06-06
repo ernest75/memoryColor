@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_player_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.course.memorycolor.PlayerData">
+
+    <TextView
+        android:text="@string/chose_number_of_players"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvChooseNumberOfPlayersFix"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/etPlayer1Name"
+        android:layout_alignStart="@+id/etPlayer1Name"
+        android:textColor="@android:color/black"
+        android:onClick="onClick"
+        android:clickable="true"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnNumberOfPlayers"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp"/>
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etPlayer1Name"
+        android:hint="@string/enter_player1_name"
+        android:imeOptions="actionDone"
+        android:layout_below="@+id/spnNumberOfPlayers"
+        android:layout_centerHorizontal="true"
+        android:textCursorDrawable="@null"
+        android:textColorHighlight="#00ddff"/>
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/etPlayer1Name"
+        android:layout_alignRight="@+id/etPlayer1Name"
+        android:layout_alignEnd="@+id/etPlayer1Name"
+        android:id="@+id/etPlayer2Name"
+        android:hint="@string/enter_player2_name"
+        android:imeOptions="actionDone"
+        android:visibility="invisible"
+        android:textCursorDrawable="@null"
+        android:textColorHighlight="#00ddff"/>
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etPlayer3Name"
+        android:hint="@string/enter_player3_name"
+        android:imeOptions="actionDone"
+        android:visibility="invisible"
+        android:layout_below="@+id/etPlayer2Name"
+        android:layout_alignLeft="@+id/etPlayer2Name"
+        android:layout_alignStart="@+id/etPlayer2Name"
+        android:textCursorDrawable="@null"
+        android:textColorHighlight="#00ddff"/>
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etPlayer4Name"
+        android:hint="@string/enter_player4_name"
+        android:imeOptions="actionDone"
+        android:visibility="invisible"
+        android:layout_below="@+id/etPlayer3Name"
+        android:layout_alignLeft="@+id/etPlayer3Name"
+        android:layout_alignStart="@+id/etPlayer3Name"
+        android:textCursorDrawable="@null"
+        android:textColorHighlight="#00ddff"/>
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etPlayer5Name"
+        android:hint="@string/enter_player5_name"
+        android:imeOptions="actionDone"
+        android:visibility="invisible"
+        android:layout_below="@+id/etPlayer4Name"
+        android:layout_alignLeft="@+id/etPlayer4Name"
+        android:layout_alignStart="@+id/etPlayer4Name"
+        android:textCursorDrawable="@null"
+        android:textColorHighlight="#00ddff"/>
+
+    <Button
+        android:text="@string/ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="88dp"
+        android:id="@+id/btn_Ok" />
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">MemoryColor</string>
+    <string name="action_new_game">New Game</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_difficulty">Difficulty</string>
+    <string name="title_activity_settings">Settings</string>
+
+
+    <string name="pref_levels_difficulty">Difficulty</string>
+
+    <array name="pref_levels_difficulty_values">
+
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+
+    </array>
+
+    <array name="pref_levels_difficulty_options">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+
+    </array>
+
+    <string name="pref_levels_difficulty_default">Easy</string>
+    <string name="pref_levels_difficulty_key">level</string>
+
+    <string name="pref_sound_switch_on_off_key">soundSwitch</string>
+    <string name="pref_sound_switch_on_off">Sound On/Off</string>
+    <string name="pref_sound_switch_on">Sound On</string>
+    <string name="pref_sound_switch_off">Sound Off</string>
+
+    <string name="pref_vibration_switch_on_off_key">vibrationSwitch</string>
+    <string name="pref_vibration_switch_on_off">Vibration On/Off</string>
+    <string name="pref_vibration_switch_on">Vibration On</string>
+    <string name="pref_vibration_switch_off">Vibration Off</string>
+
+    <string-array name="number_of_players">
+        <item>1 Player</item>
+        <item>2 Players</item>
+        <item>3 Players</item>
+        <item>4 Players</item>
+        <item>5 Players</item>
+
+    </string-array>
+
+    <string name="action_player_data">Player Data</string>
+    <string name="ok_button">Ok</string>
+    <string name="enter_player1_name">Enter Player 1 Name</string>
+    <string name="enter_player2_name">Enter Player 2 Name</string>
+    <string name="enter_player3_name">Enter Player 3 Name</string>
+    <string name="enter_player4_name">Enter Player 4 Name</string>
+    <string name="enter_player5_name">Enter Player 5 Name</string>
+
+    <string name="action_records_game">Hall of Fame</string>
+    <string name="title_activity_records_game">RecordsGameActivity</string>
+
+    <string name="chose_number_of_players">Choose number of players</string>
+    <string name="number_of_players">Number of Players</string>
+
+
+</resources>

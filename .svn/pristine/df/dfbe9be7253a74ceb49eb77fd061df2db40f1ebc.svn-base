@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+
+        android:title="@string/pref_levels_difficulty"
+        android:entryValues="@array/pref_levels_difficulty_values"
+        android:entries="@array/pref_levels_difficulty_options"
+        android:defaultValue="@string/pref_levels_difficulty_default"
+        android:key="@string/pref_levels_difficulty_key"
+
+    />
+
+</PreferenceScreen>

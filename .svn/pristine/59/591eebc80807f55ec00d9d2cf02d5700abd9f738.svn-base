@@ -1,0 +1,255 @@
+package com.course.memorycolor;
+
+import android.content.res.TypedArray;
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.v4.content.res.ResourcesCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+public class GameScreen extends AppCompatActivity {
+
+    //variables member
+    ArrayList<Integer> mColorSequence = new ArrayList<Integer>();
+    int mNumClicksUser = 0;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_game_screen);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        //setting references to the buttons
+        final Button btnRed = (Button) findViewById(R.id.btn_red);
+        final Button btnBlue = (Button)findViewById(R.id.btn_blue);
+        final Button btnGreen = (Button)findViewById(R.id.btn_green);
+        final Button btnCyan = (Button)findViewById(R.id.btn_cyan);
+        final Button btnPink = (Button)findViewById(R.id.btn_pink);
+        final Button btnYellow = (Button)findViewById(R.id.btn_yellow);
+
+        //setting onClickListeners 4 all buttons
+        btnRed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int colorNumber = Integer.parseInt(v.getTag().toString());
+
+                if(mColorSequence.get(mNumClicksUser)==colorNumber)
+                {
+                    Toast.makeText(getBaseContext(),"Correct color",Toast.LENGTH_SHORT).show();
+                    mNumClicksUser++;
+                }
+
+                else
+                {
+                    Toast.makeText(getBaseContext(),"That's not the color m8!!!, Sorry!!",Toast.LENGTH_SHORT).show();
+                }
+
+                Log.e("Valor tag",Integer.toString(colorNumber));
+            }
+        });
+
+        btnBlue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int colorNumber = Integer.parseInt(v.getTag().toString());
+
+                if(mColorSequence.get(mNumClicksUser)==colorNumber)
+                {
+                    Toast.makeText(getBaseContext(),"Correct color",Toast.LENGTH_SHORT).show();
+                    mNumClicksUser++;
+                }
+
+                else
+                {
+                    Toast.makeText(getBaseContext(),"That's not the color m8!!!, Sorry!!",Toast.LENGTH_SHORT).show();
+                }
+
+                Log.e("Valor tag",Integer.toString(colorNumber));
+            }
+        });
+
+        btnGreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int colorNumber = Integer.parseInt(v.getTag().toString());
+
+                if(mColorSequence.get(mNumClicksUser)==colorNumber)
+                {
+                    Toast.makeText(getBaseContext(),"Correct color",Toast.LENGTH_SHORT).show();
+                    mNumClicksUser++;
+                }
+
+                else
+                {
+                    Toast.makeText(getBaseContext(),"That's not the color m8!!!, Sorry!!",Toast.LENGTH_SHORT).show();
+                }
+
+                Log.e("Valor tag",Integer.toString(colorNumber));
+            }
+        });
+
+        btnCyan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int colorNumber = Integer.parseInt(v.getTag().toString());
+
+                if(mColorSequence.get(mNumClicksUser)==colorNumber)
+                {
+                    Toast.makeText(getBaseContext(),"Correct color",Toast.LENGTH_SHORT).show();
+                    mNumClicksUser++;
+                }
+
+                else
+                {
+                    Toast.makeText(getBaseContext(),"That's not the color m8!!!, Sorry!!",Toast.LENGTH_SHORT).show();
+                }
+
+                Log.e("Valor tag",Integer.toString(colorNumber));
+            }
+        });
+
+        btnPink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int colorNumber = Integer.parseInt(v.getTag().toString());
+
+                if(mColorSequence.get(mNumClicksUser)==colorNumber)
+                {
+                    Toast.makeText(getBaseContext(),"Correct color",Toast.LENGTH_SHORT).show();
+                    mNumClicksUser++;
+                }
+
+                else
+                {
+                    Toast.makeText(getBaseContext(),"That's not the color m8!!!, Sorry!!",Toast.LENGTH_SHORT).show();
+                }
+
+                Log.e("Valor tag",Integer.toString(colorNumber));
+            }
+        });
+
+        btnYellow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int colorNumber = Integer.parseInt(v.getTag().toString());
+
+                if(mColorSequence.get(mNumClicksUser)==colorNumber)
+                {
+                    Toast.makeText(getBaseContext(),"Correct color",Toast.LENGTH_SHORT).show();
+                    mNumClicksUser++;
+                }
+
+                else
+                {
+                    Toast.makeText(getBaseContext(),"That's not the color m8!!!, Sorry!!",Toast.LENGTH_SHORT).show();
+                }
+
+                Log.e("Valor tag",Integer.toString(colorNumber));
+            }
+        });
+
+
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_game_screen, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        else if (id== R.id.action_new_game )
+        {
+            gamePerformance();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    public void gamePerformance(){
+
+        //resetting variables for each new game
+        mNumClicksUser = 0;
+        mColorSequence.clear();
+
+        try {
+            Thread.sleep(500, 0);
+
+            //Take reference of all the buttons on the layout
+            final Button btnRed = (Button) findViewById(R.id.btn_red);
+            final Button btnBlue = (Button)findViewById(R.id.btn_blue);
+            final Button btnGreen = (Button)findViewById(R.id.btn_green);
+            final Button btnCyan = (Button)findViewById(R.id.btn_cyan);
+            final Button btnPink = (Button)findViewById(R.id.btn_pink);
+            final Button btnYellow = (Button)findViewById(R.id.btn_yellow);
+
+            //Array to store all the buttons
+            final ArrayList<Button> btnArray = new ArrayList<>();
+
+            //Storage of the buttons
+            btnArray.add(btnRed);
+            btnArray.add(btnBlue);
+            btnArray.add(btnGreen);
+            btnArray.add(btnCyan);
+            btnArray.add(btnPink);
+            btnArray.add(btnYellow);
+
+            //Get the arraycolors
+           // final int [] drawablesOff = getBaseContext().getResources().getIntArray(R.array.drawables_off);
+            final int [] colorsOn = getBaseContext().getResources().getIntArray(R.array.colorsOn);
+            final TypedArray drawablesOff = getResources().obtainTypedArray(R.array.drawables_off);
+
+            //Creation of the object Random
+            Random rand = new Random();
+
+            for(int i = 0 ; i < 3 ; i++) {
+                //Int to determine witch button it's going to be on sequence randomly
+                final int random = rand.nextInt(6);
+                mColorSequence.add(random);
+                final Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        //btnArray.get(random).setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.button_blue_bh_off, null));
+                        btnArray.get(random).setBackgroundColor(colorsOn[random]);
+                        //btnArray.get(random).setBackground(ResourcesCompat.getDrawable(getResources(), drawablesOff[random], null));
+
+                    }
+                },i*1100);
+
+                final Handler handler2 = new Handler();
+                handler2.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        btnArray.get(random).setBackground(ResourcesCompat.getDrawable(getResources(),drawablesOff.getResourceId(random,0), null));
+                    }
+                }, i*1100+1000);
+            }
+        }catch (InterruptedException ie){
+            ie.printStackTrace();
+        }
+    }
+}

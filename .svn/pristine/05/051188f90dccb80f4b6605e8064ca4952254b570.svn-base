@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#e20707</color>
+
+    <color name="yellow1">#ded013</color>
+    <color name="yellow2">#fff502</color>
+    <color name="grey05">#3a3737</color>
+    <color name="orange4">#ff7302</color>
+    <color name="orange5">#ff9602</color>
+    <color name="blue2">#023dff</color>
+    <color name="blue25">#02a0ff</color>
+
+    <color name="colorBlueOff">#7584de</color>
+    <color name="colorBlueOn">#0024ff</color>
+    <color name="colorRedOff">#e17274</color>
+    <color name="colorRedOn">#ff0005</color>
+    <color name="colorGreenOff">#90e67e</color>
+    <color name="colorGreenOn">#6aff00</color>
+    <color name="colorYellowOff">#ece882</color>
+    <color name="colorYellowOn">#fff500</color>
+    <color name="colorPinkOff">#e182e4</color>
+    <color name="colorPinkOn">#ff00e5</color>
+    <color name="colorCyanOff">#85d9d5</color>
+    <color name="colorCyanOn">#00fff3</color>
+    <color name="colorOrangeOn">#ff6200</color>
+    <color name="colorOrangeOff">#ffaa00</color>
+    <color name="colorGreyOn">#635e57</color>
+    <color name="colorGreyOff">#afa797</color>
+    <color name="colorStrongGreenOn">#0f5917</color>
+    <color name="colorStrongGreenOff">#00da3a</color>
+    <color name="colorPurpleOn">#8800ff</color>
+    <color name="colorPurpleOff">#cc00ff</color>
+    <array name="colorsOff">
+        <item>@color/colorRedOff</item>
+        <item>@color/colorBlueOff</item>
+        <item>@color/colorGreenOff</item>
+        <item>@color/colorCyanOff</item>
+        <item>@color/colorPinkOff</item>
+        <item>@color/colorYellowOff</item>
+        
+    </array>
+
+    <array name="colorsOn">
+        <item>@color/colorRedOn</item>
+        <item>@color/colorBlueOn</item>
+        <item>@color/colorGreenOn</item>
+        <item>@color/colorCyanOn</item>
+        <item>@color/colorPinkOn</item>
+        <item>@color/colorYellowOn</item>
+        <item>@color/colorOrangeOn</item>
+        <item>@color/colorGreyOn</item>
+        <item>@color/colorStrongGreenOn</item>
+        <item>@color/colorPurpleOn</item>
+
+    </array>
+
+</resources>

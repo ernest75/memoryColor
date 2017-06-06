@@ -1,0 +1,196 @@
+package com.course.memorycolor;
+
+
+import android.content.Intent;
+import android.database.Cursor;
+import android.support.v4.app.NavUtils;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+import android.widget.Button;
+import android.widget.Spinner;
+import android.widget.Toast;
+
+import com.course.memorycolor.data.DataBaseHandler;
+import com.course.memorycolor.data.PlayerNameAndScoreHandler;
+
+import java.util.ArrayList;
+
+public class PlayerData extends AppCompatActivity {
+
+    //Variables member
+    static final String LOG_TAG = "PlayerData";
+    int mNumberOfPlayers;
+    PlayerNameAndScoreHandler mPlayerNameAndScoreHandler;
+    ArrayAdapter<String> mStringArrayAdapter;
+
+    AutoCompleteTextView etPlayer1Name;
+    AutoCompleteTextView etPlayer2Name;
+    AutoCompleteTextView etPlayer3Name;
+    AutoCompleteTextView etPlayer4Name;
+    AutoCompleteTextView etPlayer5Name;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_player_data);
+
+        Intent intent = getIntent();
+        mNumberOfPlayers = intent.getIntExtra("numberOfPlayers",1);
+        ArrayList<String> playerNames = intent.getStringArrayListExtra("arrayListNames");
+
+        //Handler to use database
+        mPlayerNameAndScoreHandler = new PlayerNameAndScoreHandler(this);
+
+        //for make back arrow work on activity you have to decalre parent activity on manifest too
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        //getting references of AutoCompleteTextViews
+        etPlayer1Name = (AutoCompleteTextView) findViewById(R.id.etPlayer1Name);
+        etPlayer2Name = (AutoCompleteTextView) findViewById(R.id.etPlayer2Name);
+        etPlayer3Name = (AutoCompleteTextView) findViewById(R.id.etPlayer3Name);
+        etPlayer4Name = (AutoCompleteTextView) findViewById(R.id.etPlayer4Name);
+        etPlayer5Name = (AutoCompleteTextView) findViewById(R.id.etPlayer5Name);
+
+        //Array to store the AutocompleteTextViews
+        final ArrayList<AutoCompleteTextView> autoCompleteTextViewsArray = new ArrayList<AutoCompleteTextView>();
+
+        //Storage of the AutocompleteTextViews
+        autoCompleteTextViewsArray.add(etPlayer1Name);
+        autoCompleteTextViewsArray.add(etPlayer2Name);
+        autoCompleteTextViewsArray.add(etPlayer3Name);
+        autoCompleteTextViewsArray.add(etPlayer4Name);
+        autoCompleteTextViewsArray.add(etPlayer5Name);
+
+        //Getting reference of the spinner
+        Spinner spnNumberOfPlayers = (Spinner) findViewById(R.id.spnNumberOfPlayers);
+
+        //Defining Adapter for the spinner
+        ArrayAdapter<CharSequence> adapterSpinnerNumberOfPLayers =
+                ArrayAdapter.createFromResource(this, R.array.number_of_players, android.R.layout.simple_spinner_item);
+
+        //Setting dropdown behaviour for the spinner
+        adapterSpinnerNumberOfPLayers.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        //Setting adapter for the spinner
+        spnNumberOfPlayers.setAdapter(adapterSpinnerNumberOfPLayers);
+        spnNumberOfPlayers.setSelection(mNumberOfPlayers-1);
+
+        //Setting onItemClickListener for the spinner we want to pass the info of number of players
+        //and number of autocompletetextviews to be shown
+        spnNumberOfPlayers.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Log.e(LOG_TAG, Integer.toString(position + 1));
+                mNumberOfPlayers = position + 1;
+
+                for (int i = 0; i < autoCompleteTextViewsArray.size(); i++) {
+                    if (position >= i) {
+                        autoCompleteTextViewsArray.get(i).setVisibility(View.VISIBLE);
+                    } else {
+                        autoCompleteTextViewsArray.get(i).setVisibility(View.INVISIBLE);
+                    }
+                }
+
+
+            }
+
+
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        for(int i = 0 ; i<mNumberOfPlayers ; i++){
+            autoCompleteTextViewsArray.get(i).setText(playerNames.get(i));
+        }
+
+        //ArrayList to contain all the names on the database to set ther adapter for autocomplete
+        ArrayList<String> namesArray = new ArrayList<String>();
+        Cursor c = mPlayerNameAndScoreHandler.queryAllPlayers();
+        if (c.moveToFirst()) {
+
+            int indx = c.getColumnIndex(DataBaseHandler.NAME_COLUMN);
+            String name = c.getString(indx);
+            namesArray.add(name);
+
+            while (c.moveToNext()) {
+                indx = c.getColumnIndex(DataBaseHandler.NAME_COLUMN);
+                name = c.getString(indx);
+                namesArray.add(name);
+
+
+            }
+        }
+
+        //Initialization of the adapter for autocomplete
+        mStringArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, namesArray);
+
+        //Setting the adatper to autocompletetextsviews
+        etPlayer1Name.setAdapter(mStringArrayAdapter);
+        etPlayer2Name.setAdapter(mStringArrayAdapter);
+        etPlayer3Name.setAdapter(mStringArrayAdapter);
+        etPlayer4Name.setAdapter(mStringArrayAdapter);
+        etPlayer5Name.setAdapter(mStringArrayAdapter);
+
+        //getting reference to the ok button and setting on clilck listener
+        Button btnOK = (Button) findViewById(R.id.btn_Ok);
+        btnOK.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                //getting info from the textviews, inserting into database and resetting them
+                ArrayList<String> namesArray = new ArrayList<String>();
+                //comprobem que els noms introduits siguin correcte3s
+                for (int i = 0; i < mNumberOfPlayers; i++) {
+                    String name;
+                    name = autoCompleteTextViewsArray.get(i).getText().toString();
+                    if(name.length()<3)
+                    {
+                        Toast.makeText(getBaseContext(), "All names must be at least 3 characters long", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+
+                }
+
+                //introduim els noms a la base de dades
+                for (int i = 0; i < mNumberOfPlayers; i++) {
+                    String name;
+                    name = autoCompleteTextViewsArray.get(i).getText().toString().toLowerCase();
+                    mPlayerNameAndScoreHandler.insertPlayerName(name);
+                    namesArray.add(name);
+
+                }
+
+
+                Intent returnIntent = new Intent();
+                returnIntent.putExtra("numberOfPlayers", mNumberOfPlayers);
+                Log.e("Valor numberofplayers",Integer.toString(mNumberOfPlayers));
+                returnIntent.putStringArrayListExtra("namesArray",namesArray);
+                setResult(AppCompatActivity.RESULT_OK, returnIntent);
+                finish();
+
+            }
+        });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                Intent intent = NavUtils.getParentActivityIntent(this);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                NavUtils.navigateUpTo(this, intent);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+}

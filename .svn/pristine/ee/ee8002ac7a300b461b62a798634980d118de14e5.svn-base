@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="drawables_off">
+        <item>@drawable/button_red_bh_off</item>
+        <item>@drawable/button_blue_bh_off</item>
+        <item>@drawable/button_green_bh_off</item>
+        <item>@drawable/button_cyan_bh_off</item>
+        <item>@drawable/button_pink_bh_off</item>
+        <item>@drawable/button_yellow_bh_off</item>
+        <item>@drawable/button_orange_bh_off</item>
+        <item>@drawable/button_grey_bh_off</item>
+        <item>@drawable/button_strong_green_bh_off</item>
+        <item>@drawable/button_purple_bh_off</item>
+
+    </integer-array>
+
+</resources>

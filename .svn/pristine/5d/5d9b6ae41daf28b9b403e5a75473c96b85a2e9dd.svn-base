@@ -1,0 +1,50 @@
+package com.course.memorycolor.data;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+/**
+ * Created by Ernest on 04/10/2016.
+ */
+
+public class DataBaseHandler extends SQLiteOpenHelper {
+
+
+    private static final int DB_VERSION = 2;
+
+    public static final String DB_NAME = "names.db";
+
+    public static final String NAME_COLUMN = "name";
+
+    public static final String SCORE_COLUMN = "score";
+
+    public static final String TABLE_NAME = "namesOfPlayer";
+
+    public DataBaseHandler(Context context) {
+
+        super(context, DB_NAME, null, DB_VERSION);
+    }
+
+    @Override
+    public void onCreate(SQLiteDatabase db) {
+
+        // String sql = "create table namesOfGameWithScore(_id integer primary key,playerName text not null,score integer)";
+
+        String sql = "create table " + TABLE_NAME + "(" +
+                "_id integer primary key," +
+                NAME_COLUMN + " text not null unique," +
+                SCORE_COLUMN + " integer)";
+
+        db.execSQL(sql);
+
+    }
+
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
+        onCreate(db);
+
+    }
+}

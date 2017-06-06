@@ -1,0 +1,62 @@
+package com.course.memorycolor.data;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+
+/**
+ * Created by Ernest on 04/10/2016.
+ */
+
+public class PlayerNameAndScoreHandler {
+
+    private SQLiteDatabase db;
+
+    public PlayerNameAndScoreHandler(Context context) {
+        DataBaseHandler dbHandler = new DataBaseHandler(context);
+        db = dbHandler.getWritableDatabase();
+    }
+
+    public void insertPlayerAndScore(String name, int score) {
+
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put("name", name);
+        contentValues.put("score", score);
+
+        db.insert(DataBaseHandler.NAMES_OF_PLAYER_TABLE, null, contentValues);
+
+    }
+
+    public void insertPlayerName(String name) {
+
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put("name", name);
+
+        db.insert(DataBaseHandler.NAMES_OF_PLAYER_TABLE, null, contentValues);
+    }
+
+    public Cursor queryAllPlayers() {
+        Cursor c = db.query(DataBaseHandler.NAMES_OF_PLAYER_TABLE,
+                new String[]{"_id", DataBaseHandler.NAME_COLUMN},
+                null,
+                null,
+                null,
+                null,
+                null);
+
+        return c;
+    }
+
+    public void deletePlayer(int _id) {
+        db.delete(
+                DataBaseHandler.NAMES_OF_PLAYER_TABLE,
+                "_id=?",
+                new String[]{_id + ""}
+        );
+    }
+
+
+}

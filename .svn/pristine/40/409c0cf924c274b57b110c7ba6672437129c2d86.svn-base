@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MemoryColor</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_new_game">New Game</string>
+</resources>

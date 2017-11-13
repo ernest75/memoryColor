@@ -1,10 +1,26 @@
 [
     {
-        "merged": "C:\\PROGRAMACIO\\first steps\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
-        "source": "C:\\Users\\Ernest\\.android\\build-cache\\ff8565b5e4bb1ad893fb22326cec251079a08eb4\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+        "merged": "C:\\PROGRAMACIO\\ANDROID PATTERNS\\TESTS\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\Ernest\\.android\\build-cache\\254fe27a17931c371465acdb34eea090e81266c2\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     },
     {
-        "merged": "C:\\PROGRAMACIO\\first steps\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
-        "source": "C:\\Users\\Ernest\\.android\\build-cache\\ff8565b5e4bb1ad893fb22326cec251079a08eb4\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+        "merged": "F:\\xavill\\ProjectsErnest\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\xavi\\.android\\build-cache\\a7af2ba2ca03c37d94e4a0f0a5d16cc960a2f97b\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "C:\\PROGRAMACIO\\ANDROID PATTERNS\\TESTS\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\Ernest\\.android\\build-cache\\254fe27a17931c371465acdb34eea090e81266c2\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\xavi\\Desktop\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\xavi\\.android\\build-cache\\a7af2ba2ca03c37d94e4a0f0a5d16cc960a2f97b\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\xavi\\Desktop\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\xavi\\.android\\build-cache\\a7af2ba2ca03c37d94e4a0f0a5d16cc960a2f97b\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "F:\\xavill\\ProjectsErnest\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\xavi\\.android\\build-cache\\a7af2ba2ca03c37d94e4a0f0a5d16cc960a2f97b\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
     }
 ]

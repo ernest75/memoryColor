@@ -1,11 +1,8 @@
 package com.course.memorycolor;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -15,18 +12,22 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.View;
+
+import com.course.memorycolor.fragments.EasyFragment;
+import com.course.memorycolor.fragments.HardFragment;
+import com.course.memorycolor.fragments.MediumFragment;
+import com.course.memorycolor.model.ModelMemoryColor;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class RecordsGameActivity extends AppCompatActivity {
 
+    //Variables member
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private static Activity mActivity;
-
-
+    ModelMemoryColor mModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,11 @@ public class RecordsGameActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         mActivity = this;
 
+        try {
+            mModel = ModelMemoryColor.getInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         //for make back arrow work on activity you have to decalre parent activity on manifest too
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -45,14 +51,13 @@ public class RecordsGameActivity extends AppCompatActivity {
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
 
-
     }
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new EasyFragment(), "EASY");
-        adapter.addFragment(new MediumFragment(), "MEDIUM");
-        adapter.addFragment(new HardFragment(), "HARD");
+        adapter.addFragment(new EasyFragment(), getResources().getString(R.string.title_easy_level));
+        adapter.addFragment(new MediumFragment(), getResources().getString(R.string.title_medium_level));
+        adapter.addFragment(new HardFragment(), getResources().getString(R.string.title_hard_level));
         viewPager.setAdapter(adapter);
     }
 
@@ -96,8 +101,7 @@ public class RecordsGameActivity extends AppCompatActivity {
         @Override
         public CharSequence getPageTitle(int position) {
             return mFragmentTitleList.get(position);
-            //null to show only icons
-            //return null;
+            //return null to show only icons
         }
     }
 

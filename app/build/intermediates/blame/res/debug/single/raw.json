@@ -1,14 +1,38 @@
 [
     {
-        "merged": "C:\\PROGRAMACIO\\first steps\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\raw\\wrong_answer.mp3",
-        "source": "C:\\PROGRAMACIO\\first steps\\MemoryColor\\app\\src\\main\\res\\raw\\wrong_answer.mp3"
+        "merged": "C:\\PROGRAMACIO\\ANDROID PATTERNS\\TESTS\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\raw\\wrong_answer.mp3",
+        "source": "C:\\PROGRAMACIO\\ANDROID PATTERNS\\TESTS\\MemoryColor\\app\\src\\main\\res\\raw\\wrong_answer.mp3"
     },
     {
-        "merged": "C:\\PROGRAMACIO\\first steps\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\raw\\wrong_answer_short.mp3",
-        "source": "C:\\PROGRAMACIO\\first steps\\MemoryColor\\app\\src\\main\\res\\raw\\wrong_answer_short.mp3"
+        "merged": "C:\\Users\\xavi\\Desktop\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\raw\\wrong_answer_short.mp3",
+        "source": "C:\\Users\\xavi\\Desktop\\MemoryColor\\app\\src\\main\\res\\raw\\wrong_answer_short.mp3"
     },
     {
-        "merged": "C:\\PROGRAMACIO\\first steps\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\raw\\right_answer.mp3",
-        "source": "C:\\PROGRAMACIO\\first steps\\MemoryColor\\app\\src\\main\\res\\raw\\right_answer.mp3"
+        "merged": "C:\\Users\\xavi\\Desktop\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\raw\\wrong_answer.mp3",
+        "source": "C:\\Users\\xavi\\Desktop\\MemoryColor\\app\\src\\main\\res\\raw\\wrong_answer.mp3"
+    },
+    {
+        "merged": "F:\\xavill\\ProjectsErnest\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\raw\\right_answer.mp3",
+        "source": "F:\\xavill\\ProjectsErnest\\MemoryColor\\app\\src\\main\\res\\raw\\right_answer.mp3"
+    },
+    {
+        "merged": "C:\\PROGRAMACIO\\ANDROID PATTERNS\\TESTS\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\raw\\wrong_answer_short.mp3",
+        "source": "C:\\PROGRAMACIO\\ANDROID PATTERNS\\TESTS\\MemoryColor\\app\\src\\main\\res\\raw\\wrong_answer_short.mp3"
+    },
+    {
+        "merged": "C:\\Users\\xavi\\Desktop\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\raw\\right_answer.mp3",
+        "source": "C:\\Users\\xavi\\Desktop\\MemoryColor\\app\\src\\main\\res\\raw\\right_answer.mp3"
+    },
+    {
+        "merged": "F:\\xavill\\ProjectsErnest\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\raw\\wrong_answer.mp3",
+        "source": "F:\\xavill\\ProjectsErnest\\MemoryColor\\app\\src\\main\\res\\raw\\wrong_answer.mp3"
+    },
+    {
+        "merged": "F:\\xavill\\ProjectsErnest\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\raw\\wrong_answer_short.mp3",
+        "source": "F:\\xavill\\ProjectsErnest\\MemoryColor\\app\\src\\main\\res\\raw\\wrong_answer_short.mp3"
+    },
+    {
+        "merged": "C:\\PROGRAMACIO\\ANDROID PATTERNS\\TESTS\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\raw\\right_answer.mp3",
+        "source": "C:\\PROGRAMACIO\\ANDROID PATTERNS\\TESTS\\MemoryColor\\app\\src\\main\\res\\raw\\right_answer.mp3"
     }
 ]

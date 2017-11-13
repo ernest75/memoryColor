@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlueOff">#7584de</color>
+    <color name="colorBlueOn">#0024ff</color>
+    <color name="colorRedOff">#e17274</color>
+    <color name="colorRedOn">#ff0005</color>
+    <color name="colorGreenOff">#90e67e</color>
+    <color name="colorGreenOn">#6aff00</color>
+    <color name="colorYelowOff">#ece882</color>
+    <color name="colorYelowOn">#fff500</color>
+    <color name="colorPinkOff">#e182e4</color>
+    <color name="colorPinkOn">#f700ff</color>
+    <color name="colorCyanOff">#85d9d5</color>
+    <color name="colorCyanOn">#00fff3</color>
+
+</resources>

@@ -58,6 +58,10 @@
 
     <string name="chose_number_of_players">Choose number of players</string>
     <string name="number_of_players">Number of Players</string>
+    <string name="title_easy_level">EASY</string>
+    <string name="title_medium_level">MEDIUM</string>
+    <string name="title_hard_level">HARD</string>
+
 
 
 </resources>

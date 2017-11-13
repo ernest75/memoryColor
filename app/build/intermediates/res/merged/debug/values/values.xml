@@ -392,6 +392,9 @@
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="title_activity_records_game">RecordsGameActivity</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="title_easy_level">EASY</string>
+    <string name="title_hard_level">HARD</string>
+    <string name="title_medium_level">MEDIUM</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

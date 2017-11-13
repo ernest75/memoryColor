@@ -29,6 +29,7 @@ import android.widget.Toast;
 
 import com.course.memorycolor.data.DataBaseHandler;
 import com.course.memorycolor.data.PlayerNameAndScoreHandler;
+import com.course.memorycolor.model.ModelMemoryColor;
 
 import java.util.ArrayList;
 
@@ -36,14 +37,12 @@ public class PlayerData extends AppCompatActivity {
 
     //Variables member
     static final String LOG_TAG = "PlayerData";
-    int mNumberOfPlayers;
-    PlayerNameAndScoreHandler mPlayerNameAndScoreHandler;
     ArrayAdapter<String> mStringArrayAdapter;
-    String mDefaultPlayerName;
     private LayoutInflater mInflator;
     private boolean selected;
     private Spinner spnNumberOfPlayers;
     TextView tvChooseNumberOfPlayersFix;
+    ModelMemoryColor mModel;
 
     //Array to store the AutocompleteTextViews
     final ArrayList<AutoCompleteTextView> autoCompleteTextViewsArray = new ArrayList<AutoCompleteTextView>();
@@ -58,22 +57,14 @@ public class PlayerData extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player_data);
-
         //This is used to fix the orientation so the screen doesn't rotate in this activity
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        //Shared preferences are used here to retrieve the default player name
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        mDefaultPlayerName = preferences.getString("defaultName", null);
-
-        //We get the intent that created ths activity to retrieve the number of players and
-        // their names
-        Intent intent = getIntent();
-        mNumberOfPlayers = intent.getIntExtra("numberOfPlayers", 1);
-        ArrayList<String> playerNames = intent.getStringArrayListExtra("arrayListNames");
-
-        //Handler to use database
-        mPlayerNameAndScoreHandler = new PlayerNameAndScoreHandler(this);
+        try {
+            mModel = ModelMemoryColor.getInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         //for make back arrow work on activity you have to decalre parent activity on manifest too
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -87,8 +78,8 @@ public class PlayerData extends AppCompatActivity {
 
         //Here we set the text to the first edit text, this is made to keep the name of
         // the last time the app was played on the device
-        if (mDefaultPlayerName != null) {
-            etPlayer1Name.setText(mDefaultPlayerName);
+        if (mModel.mDefaultPlayerName != null) {
+            etPlayer1Name.setText(mModel.mDefaultPlayerName);
 
         }
 
@@ -102,11 +93,11 @@ public class PlayerData extends AppCompatActivity {
         //calling the method initUI that is made to be able to set our spinner
         initUI();
 
-        for (int i = 0; i < mNumberOfPlayers; i++) {
+        for (int i = 0; i < mModel.mNumberOfPlayers; i++) {
             final int iFinal = i;
 
             //Setting the text for the autocompleteTextViews
-            autoCompleteTextViewsArray.get(i).setText(playerNames.get(i));
+            autoCompleteTextViewsArray.get(i).setText(mModel.mPlayerNames.get(i));
 
             //Setting on touch listeners for the autocompleteTextViews
             autoCompleteTextViewsArray.get(i).setOnTouchListener(new View.OnTouchListener() {
@@ -133,7 +124,6 @@ public class PlayerData extends AppCompatActivity {
                     //on text changed the touch listener is canceled
                     //autoCompleteTextViewsArray.get(iFinal).setOnClickListener(null);
                     autoCompleteTextViewsArray.get(iFinal).setOnTouchListener(null);
-
                 }
 
                 @Override
@@ -142,10 +132,9 @@ public class PlayerData extends AppCompatActivity {
                 }
             });
         }
-
         //ArrayList to contain all the names of the database to set the adapter for autocomplete
         ArrayList<String> namesArray = new ArrayList<String>();
-        Cursor c = mPlayerNameAndScoreHandler.queryAllPlayers();
+        Cursor c = mModel.mPlayerNameAndScoreHandler.queryAllPlayers();
         if (c.moveToFirst()) {
 
             int indx = c.getColumnIndex(DataBaseHandler.NAME_COLUMN);
@@ -156,11 +145,8 @@ public class PlayerData extends AppCompatActivity {
                 indx = c.getColumnIndex(DataBaseHandler.NAME_COLUMN);
                 name = c.getString(indx);
                 namesArray.add(name);
-
-
             }
         }
-
         //Initialization of the adapter for autocomplete
         mStringArrayAdapter = new ArrayAdapter<String>(
                 this,
@@ -174,19 +160,16 @@ public class PlayerData extends AppCompatActivity {
         etPlayer4Name.setAdapter(mStringArrayAdapter);
         etPlayer5Name.setAdapter(mStringArrayAdapter);
 
-
         //getting reference to the ok button and setting on clilck listener
         Button btnOK = (Button) findViewById(R.id.btn_Ok);
         btnOK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-
                 //getting info from the textviews, inserting into database and resetting them
-                ArrayList<String> namesArray = new ArrayList<String>();
-
+                mModel.mPlayerNames.clear();
                 //Checking that the names introduced by user are correct
-                for (int i = 0; i < mNumberOfPlayers; i++) {
+                for (int i = 0; i < mModel.mNumberOfPlayers; i++) {
                     String name;
                     name = autoCompleteTextViewsArray.get(i).getText().toString();
                     if (name.length() < 3) {
@@ -197,27 +180,20 @@ public class PlayerData extends AppCompatActivity {
                     }
 
                 }
-
                 //Storing names to database
-                for (int i = 0; i < mNumberOfPlayers; i++) {
+                for (int i = 0; i < mModel.mNumberOfPlayers; i++) {
                     String name;
                     name = autoCompleteTextViewsArray.get(i).getText().toString().toLowerCase();
-                    mPlayerNameAndScoreHandler.insertPlayerName(name);
-                    namesArray.add(name);
-
+                    mModel.mPlayerNameAndScoreHandler.insertPlayerName(name);
+                    mModel.mPlayerNames.add(name);
                 }
 
                 //saving the first player name introduced as default player
-                mDefaultPlayerName = autoCompleteTextViewsArray.get(0).getText().toString()
+                mModel.mDefaultPlayerName = autoCompleteTextViewsArray.get(0).getText().toString()
                         .toLowerCase();
-
-
                 //creating the return intent, saving number of players, their names and the default
                 // player name and also setting the result of the createActivityForResult
                 Intent returnIntent = new Intent();
-                returnIntent.putExtra("numberOfPlayers", mNumberOfPlayers);
-                returnIntent.putStringArrayListExtra("namesArray", namesArray);
-                returnIntent.putExtra("defaultPLayer", mDefaultPlayerName);
                 setResult(AppCompatActivity.RESULT_OK, returnIntent);
                 finish();
 
@@ -232,7 +208,7 @@ public class PlayerData extends AppCompatActivity {
         spnNumberOfPlayers.setAdapter(typeSpinnerAdapter);
         spnNumberOfPlayers.setOnItemSelectedListener(typeSelectedListener);
         spnNumberOfPlayers.setOnTouchListener(typeSpinnerTouchListener);
-        spnNumberOfPlayers.setSelection(mNumberOfPlayers - 1);
+        spnNumberOfPlayers.setSelection(mModel.mNumberOfPlayers - 1);
         mInflator = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
         tvChooseNumberOfPlayersFix = (TextView)findViewById(R.id.tvChooseNumberOfPlayersFix);
         tvChooseNumberOfPlayersFix.setOnClickListener(new View.OnClickListener() {
@@ -242,7 +218,6 @@ public class PlayerData extends AppCompatActivity {
 
             }
         });
-
     }
 
     //Creation of our own spinner adapter
@@ -293,7 +268,6 @@ public class PlayerData extends AppCompatActivity {
             return convertView;
         }
 
-        ;
     };
 
     //Listener of the spinner, here we set the variable number of players and the number of
@@ -304,8 +278,7 @@ public class PlayerData extends AppCompatActivity {
         @Override
         public void onItemSelected(AdapterView<?> parent, View view,
                                    int position, long id) {
-            Log.e(LOG_TAG, Integer.toString(position + 1));
-            mNumberOfPlayers = position + 1;
+            mModel.mNumberOfPlayers = position + 1;
 
             for (int i = 0; i < autoCompleteTextViewsArray.size(); i++) {
                 if (position >= i) {
@@ -332,9 +305,6 @@ public class PlayerData extends AppCompatActivity {
             return false;
         }
     };
-
-
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

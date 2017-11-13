@@ -139,7 +139,6 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
                 || GeneralPreferenceFragment.class.getName().equals(fragmentName);
 
     }
-
     /**
      * This fragment shows general preferences only. It is used when the
      * activity is showing a two-pane settings UI.
@@ -160,10 +159,6 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
 
 
         }
-
-
-
-
         @Override
         public boolean onOptionsItemSelected(MenuItem item) {
 

@@ -1,0 +1,111 @@
+package com.course.memorycolor;
+
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class GameScreen extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_game_screen);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_game_screen, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        else if (id== R.id.action_new_game )
+        {
+            gamePerformance();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    public void gamePerformance(){
+        try {
+            Thread.sleep(500, 0);
+            final Button btnRed = (Button) findViewById(R.id.btn_red);
+            final Button btnBlue = (Button)findViewById(R.id.btn_blue);
+            final Button btnGreen = (Button)findViewById(R.id.btn_green);
+
+            btnRed.setBackgroundColor(ContextCompat.getColor(this, R.color.colorRedOn));
+
+
+            final Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    btnRed.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.colorRedOff));
+                }
+            }, 1000);
+
+            final Handler handler2 = new Handler();
+            handler2.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    btnBlue.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.colorBlueOn));
+                }
+            }, 1100);
+
+
+            final Handler handler3 = new Handler();
+            handler3.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    btnBlue.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.colorBlueOff));
+                }
+            }, 2100);
+
+            final Handler handler4 = new Handler();
+            handler4.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    btnGreen.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.colorGreenOn));
+                }
+            }, 2200);
+
+
+            final Handler handler5 = new Handler();
+            handler5.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    btnGreen.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.colorGreenOff));
+                }
+            }, 3200);
+        }catch (InterruptedException ie){
+            ie.printStackTrace();
+        }
+    }
+}

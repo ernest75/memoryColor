@@ -1,6 +1,14 @@
 [
     {
-        "merged": "C:\\PROGRAMACIO\\first steps\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",
-        "source": "C:\\Users\\Ernest\\.android\\build-cache\\ff8565b5e4bb1ad893fb22326cec251079a08eb4\\output\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
+        "merged": "F:\\xavill\\ProjectsErnest\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\xavi\\.android\\build-cache\\a7af2ba2ca03c37d94e4a0f0a5d16cc960a2f97b\\output\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\xavi\\Desktop\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\xavi\\.android\\build-cache\\a7af2ba2ca03c37d94e4a0f0a5d16cc960a2f97b\\output\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "C:\\PROGRAMACIO\\ANDROID PATTERNS\\TESTS\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\Ernest\\.android\\build-cache\\254fe27a17931c371465acdb34eea090e81266c2\\output\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
     }
 ]

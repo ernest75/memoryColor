@@ -11,7 +11,7 @@
         android:id="@+id/action_new_game"
         android:orderInCategory="50"
         android:title="@string/action_new_game"
-        app:showAsAction ="ifRoom"
+        app:showAsAction ="always"
         android:icon="@android:drawable/ic_media_play">
 
     </item>

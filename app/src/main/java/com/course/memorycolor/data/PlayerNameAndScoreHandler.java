@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.logging.Level;
 
@@ -12,7 +13,7 @@ import java.util.logging.Level;
  * Created by Ernest on 04/10/2016.
  */
 
-public class PlayerNameAndScoreHandler {
+public class PlayerNameAndScoreHandler implements Serializable {
 
     private SQLiteDatabase db;
 
@@ -20,7 +21,6 @@ public class PlayerNameAndScoreHandler {
         DataBaseHandler dbHandler = new DataBaseHandler(context);
         db = dbHandler.getWritableDatabase();
     }
-
 
     public void insertPlayerName(String name) {
 

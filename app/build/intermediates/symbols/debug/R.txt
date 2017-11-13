@@ -905,6 +905,9 @@ int string pref_vibration_switch_on_off_key 0x7f08002f
 int string status_bar_notification_info_overflow 0x7f080013
 int string title_activity_records_game 0x7f080030
 int string title_activity_settings 0x7f080031
+int string title_easy_level 0x7f080032
+int string title_hard_level 0x7f080033
+int string title_medium_level 0x7f080034
 int style AlertDialog_AppCompat 0x7f0b0088
 int style AlertDialog_AppCompat_Light 0x7f0b0089
 int style Animation_AppCompat_Dialog 0x7f0b008a

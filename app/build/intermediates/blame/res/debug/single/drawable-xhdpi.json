@@ -20,6 +20,10 @@
         "source": "C:\\PROGRAMACIO\\ANDROID PATTERNS\\TESTS\\MemoryColor\\app\\src\\main\\res\\drawable-xhdpi\\ic_records_game.png"
     },
     {
+        "merged": "C:\\PROGRAMACIO\\first steps\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_notifications_black_24dp.png",
+        "source": "C:\\PROGRAMACIO\\first steps\\MemoryColor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_notifications_black_24dp.png"
+    },
+    {
         "merged": "C:\\PROGRAMACIO\\ANDROID PATTERNS\\TESTS\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_player_data.png",
         "source": "C:\\PROGRAMACIO\\ANDROID PATTERNS\\TESTS\\MemoryColor\\app\\src\\main\\res\\drawable-xhdpi\\ic_player_data.png"
     },
@@ -48,6 +52,14 @@
         "source": "F:\\xavill\\ProjectsErnest\\MemoryColor\\app\\src\\main\\res\\drawable-xhdpi\\ic_player_data.png"
     },
     {
+        "merged": "C:\\PROGRAMACIO\\first steps\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_sync_black_24dp.png",
+        "source": "C:\\PROGRAMACIO\\first steps\\MemoryColor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_sync_black_24dp.png"
+    },
+    {
+        "merged": "C:\\PROGRAMACIO\\first steps\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_records_game.png",
+        "source": "C:\\PROGRAMACIO\\first steps\\MemoryColor\\app\\src\\main\\res\\drawable-xhdpi\\ic_records_game.png"
+    },
+    {
         "merged": "C:\\PROGRAMACIO\\ANDROID PATTERNS\\TESTS\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_notifications_black_24dp.png",
         "source": "C:\\PROGRAMACIO\\ANDROID PATTERNS\\TESTS\\MemoryColor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_notifications_black_24dp.png"
     },
@@ -56,7 +68,15 @@
         "source": "F:\\xavill\\ProjectsErnest\\MemoryColor\\app\\src\\main\\res\\drawable-xhdpi\\ic_records_game.png"
     },
     {
+        "merged": "C:\\PROGRAMACIO\\first steps\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_info_black_24dp.png",
+        "source": "C:\\PROGRAMACIO\\first steps\\MemoryColor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_info_black_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\xavi\\Desktop\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_notifications_black_24dp.png",
         "source": "C:\\Users\\xavi\\Desktop\\MemoryColor\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_notifications_black_24dp.png"
+    },
+    {
+        "merged": "C:\\PROGRAMACIO\\first steps\\MemoryColor\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_player_data.png",
+        "source": "C:\\PROGRAMACIO\\first steps\\MemoryColor\\app\\src\\main\\res\\drawable-xhdpi\\ic_player_data.png"
     }
 ]

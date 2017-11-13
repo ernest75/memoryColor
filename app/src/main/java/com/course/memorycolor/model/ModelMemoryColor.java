@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * Created by xavi on 07/10/2017.
+ * Created by Ernest on 07/10/2017.
  */
 
 public class ModelMemoryColor {
@@ -197,7 +197,8 @@ public class ModelMemoryColor {
             // and if there isn't any will use "player1", that string should be used only when the
             // app it's first installed on the device if everything works smoothly...
             SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(mContext);
-            mDefaultPlayerName = preferences.getString("defaultName", "player1");
+            mDefaultPlayerName = preferences.getString("defaultName", mContext.getResources().
+                    getString(R.string.default_player_name));
             mPlayerNames.add(0, mDefaultPlayerName);
             mNumberOfPlayers = 1;
 

@@ -61,6 +61,7 @@
     <string name="title_easy_level">EASY</string>
     <string name="title_medium_level">MEDIUM</string>
     <string name="title_hard_level">HARD</string>
+    <string name="default_player_name">player1</string>
 
 
 

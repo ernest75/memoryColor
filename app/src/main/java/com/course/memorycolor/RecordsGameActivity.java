@@ -21,12 +21,16 @@ import com.course.memorycolor.model.ModelMemoryColor;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.inject.Inject;
+
 public class RecordsGameActivity extends AppCompatActivity {
 
     //Variables member
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private static Activity mActivity;
+
+    @Inject
     ModelMemoryColor mModel;
 
     @Override
@@ -37,11 +41,6 @@ public class RecordsGameActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         mActivity = this;
 
-        try {
-            mModel = ModelMemoryColor.getInstance();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
         //for make back arrow work on activity you have to decalre parent activity on manifest too
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

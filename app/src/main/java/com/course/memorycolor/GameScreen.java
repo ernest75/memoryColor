@@ -22,10 +22,14 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.course.memorycolor.dagger.MemoryColor;
 import com.course.memorycolor.model.ModelMemoryColor;
 
 import java.io.IOException;
 import java.util.ArrayList;
+
+import javax.inject.Inject;
+import javax.inject.Named;
 
 public class GameScreen extends AppCompatActivity {
 
@@ -35,12 +39,15 @@ public class GameScreen extends AppCompatActivity {
 
     public ArrayList<Button> mButtonArrayList;
 
-    //Reference to the context of the class
-    private Context mContext;
+    //Reference to the context of the app
+    @Inject
+    @Named("application_context")
+    public Context mContext;
 
     //Object menu
     private Menu mMenu;
 
+    @Inject
     ModelMemoryColor mModel;
 
     public MediaPlayer mpRightAnswer;
@@ -52,7 +59,8 @@ public class GameScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mContext = this;
+        //injecting dagger2 to GameScreen
+        ((MemoryColor)getApplication()).getMemoryComponent().injectGameScreen(this);
 
         mButtonArrayList = new ArrayList<>();
         mpRightAnswer = MediaPlayer.create(mContext, R.raw.right_answer);
@@ -60,7 +68,7 @@ public class GameScreen extends AppCompatActivity {
         mpWrongAnswer = MediaPlayer.create(mContext, R.raw.wrong_answer);
         mpWrongAnswerShort = MediaPlayer.create(mContext, R.raw.wrong_answer_short);
 
-        mModel = ModelMemoryColor.initialize(this);
+        //mModel = ModelMemoryColor.initialize(this);
 
         //** Retrieving data from the saveInstanceState Bundle **\\
 

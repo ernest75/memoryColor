@@ -27,11 +27,14 @@ import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.course.memorycolor.dagger.MemoryColor;
 import com.course.memorycolor.data.DataBaseHandler;
 import com.course.memorycolor.data.PlayerNameAndScoreHandler;
 import com.course.memorycolor.model.ModelMemoryColor;
 
 import java.util.ArrayList;
+
+import javax.inject.Inject;
 
 public class PlayerData extends AppCompatActivity {
 
@@ -42,6 +45,8 @@ public class PlayerData extends AppCompatActivity {
     private boolean selected;
     private Spinner spnNumberOfPlayers;
     TextView tvChooseNumberOfPlayersFix;
+
+    @Inject
     ModelMemoryColor mModel;
 
     //Array to store the AutocompleteTextViews
@@ -57,14 +62,12 @@ public class PlayerData extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player_data);
+
         //This is used to fix the orientation so the screen doesn't rotate in this activity
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        try {
-            mModel = ModelMemoryColor.getInstance();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        ((MemoryColor)getApplication()).getMemoryComponent().injectPlayerData(this);
+
 
         //for make back arrow work on activity you have to decalre parent activity on manifest too
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

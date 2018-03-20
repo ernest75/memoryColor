@@ -12,9 +12,12 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
 import com.course.memorycolor.R;
+import com.course.memorycolor.dagger.MemoryColor;
 import com.course.memorycolor.data.DataBaseHandler;
 import com.course.memorycolor.data.PlayerNameAndScoreHandler;
 import com.course.memorycolor.model.ModelMemoryColor;
+
+import javax.inject.Inject;
 
 /**
  * Created by Ernest on 11/10/2016.
@@ -29,6 +32,8 @@ public class HardFragment extends Fragment {
     Context mContext;
 
     int mLevel = 3;
+
+    @Inject
     ModelMemoryColor mModel;
 
     @Override
@@ -40,11 +45,7 @@ public class HardFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
-        try {
-            mModel = ModelMemoryColor.getInstance();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        ((MemoryColor)getActivity().getApplication()).getMemoryComponent().injectHardFragment(this);
 
         super.onCreate(savedInstanceState);
     }

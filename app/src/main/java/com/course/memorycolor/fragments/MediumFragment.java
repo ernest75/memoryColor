@@ -12,9 +12,13 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
 import com.course.memorycolor.R;
+import com.course.memorycolor.dagger.MemoryColor;
 import com.course.memorycolor.data.DataBaseHandler;
 import com.course.memorycolor.data.PlayerNameAndScoreHandler;
 import com.course.memorycolor.model.ModelMemoryColor;
+
+import javax.inject.Inject;
+import javax.inject.Named;
 
 /**
  * Created by Ernest on 11/10/2016.
@@ -23,7 +27,10 @@ import com.course.memorycolor.model.ModelMemoryColor;
 public class MediumFragment extends Fragment {
 
 
+
     Context mContext;
+
+    @Inject
     ModelMemoryColor mModel;
     int mLevel = 2;
     public MediumFragment() {
@@ -39,11 +46,8 @@ public class MediumFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
-        try {
-            mModel = ModelMemoryColor.getInstance();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
+        ((MemoryColor)getActivity().getApplication()).getMemoryComponent().injectMediumFragment(this);
 
         super.onCreate(savedInstanceState);
     }

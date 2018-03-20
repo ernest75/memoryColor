@@ -12,9 +12,12 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
 import com.course.memorycolor.R;
+import com.course.memorycolor.dagger.MemoryColor;
 import com.course.memorycolor.data.DataBaseHandler;
 import com.course.memorycolor.data.PlayerNameAndScoreHandler;
 import com.course.memorycolor.model.ModelMemoryColor;
+
+import javax.inject.Inject;
 
 /**
  * Created by Ernest on 11/10/2016.
@@ -22,9 +25,13 @@ import com.course.memorycolor.model.ModelMemoryColor;
 
 public class EasyFragment extends Fragment {
 
+
     Context mContext;
     int mLevel = 1;
+
+    @Inject
     ModelMemoryColor mModel;
+
 
     public EasyFragment() {
 
@@ -38,13 +45,8 @@ public class EasyFragment extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-
-        try {
-            mModel = ModelMemoryColor.getInstance();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
+        
+        ((MemoryColor)getActivity().getApplication()).getMemoryComponent().injectEasyFragment(this);
         super.onCreate(savedInstanceState);
     }
 

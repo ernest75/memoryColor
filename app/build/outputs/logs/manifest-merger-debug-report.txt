@@ -4,19 +4,24 @@ ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/
 INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
 INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
 INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
-MERGED from [com.android.support:design:23.3.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/design-23.3.0.aar/a9bda5a28b8b1cc5db5d34cc73b22325/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.dagger:dagger-android-support:2.11] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.11.aar/05074f7322b1af36b7830ee8409b4f19/AndroidManifest.xml:16:1-19:12
-MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/260c4ba27b4781682ad3ca1f4d32a9b2/AndroidManifest.xml:17:1-27:12
-MERGED from [com.google.dagger:dagger-android:2.11] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/dagger-android-2.11.aar/29fb5b4f812d0efd90a2752e1d022af4/AndroidManifest.xml:16:1-19:12
-MERGED from [com.android.support:animated-vector-drawable:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.0.0.aar/39753ba0abe6a07472fad1ef8e6fae0a/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:support-vector-drawable:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.0.0.aar/417ecf325a25e7350a71cd980b2c7634/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:recyclerview-v7:23.3.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.3.0.aar/d09f5019d22db93eb67dfbb201ae9e6b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-v4:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-v4-25.0.0.aar/0d57941de6b3a3200c7eb7c667a593a9/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-fragment:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-fragment-25.0.0.aar/dba44dec864e70dc715cc624e9bd64ab/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-media-compat:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.0.0.aar/4c3be924edc9ecc392bcc73e55b5ba56/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-core-utils:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.0.0.aar/bfbcadedf729ea93465a491e810ffe0f/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-core-ui:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.0.0.aar/3d8cfff42f6db3ee4b4987346402a56f/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-compat:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-compat-25.0.0.aar/5b7d9b6b483fff28b688f7c36d620c4a/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:design:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/fa41a8bf9a3423ec096fcbbd64d8c59a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.dagger:dagger-android-support:2.11] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.11.aar/5e77a3f366156f6c71eb0a16f1729196/AndroidManifest.xml:16:1-19:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ef65b03129f0842419179cf467197385/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.dagger:dagger-android:2.11] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/dagger-android-2.11.aar/689a38a1a5f33fa756bc5ba343a7aa3d/AndroidManifest.xml:16:1-19:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/ec1c65468228368bb095feed32b7ddaa/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/e275d5c5eb0746f196e6ca803b955645/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/a33bc5805cd233bb68070b1d13071096/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/e3f2992a2fc702c124f6cc4e6d2ae29a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/119e3bff0556dcecd84a7d8eeb6f7c17/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ed31ca4ace1859ed7fc20dd86ba93467/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/667cbef6e383c207a4cb51c89f0876c0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/124fd9ce2d4d0549a5711a30a2347c56/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/5c08b1ac697a2eabf7aad5cde5288a64/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/15b81febde9c366b0eb5b0262d77b31f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/92c99ae00d5030fcc80a0a7b90702c85/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/456667328ec4585b621def3b9420c9dc/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/d12724c600f894e292cd5ed82b478373/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/736be82f09ed4917b48d531d2f2679c1/AndroidManifest.xml:17:1-22:12
 INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
 INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
 INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
@@ -40,26 +45,6 @@ ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/
 		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:4:22-63
 application
 ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:5:5-41:19
-MERGED from [com.android.support:design:23.3.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/design-23.3.0.aar/a9bda5a28b8b1cc5db5d34cc73b22325/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:23.3.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/design-23.3.0.aar/a9bda5a28b8b1cc5db5d34cc73b22325/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/260c4ba27b4781682ad3ca1f4d32a9b2/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/260c4ba27b4781682ad3ca1f4d32a9b2/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.0.0.aar/39753ba0abe6a07472fad1ef8e6fae0a/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.0.0.aar/39753ba0abe6a07472fad1ef8e6fae0a/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.0.0.aar/417ecf325a25e7350a71cd980b2c7634/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-vector-drawable:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.0.0.aar/417ecf325a25e7350a71cd980b2c7634/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-v4:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-v4-25.0.0.aar/0d57941de6b3a3200c7eb7c667a593a9/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-v4-25.0.0.aar/0d57941de6b3a3200c7eb7c667a593a9/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-fragment-25.0.0.aar/dba44dec864e70dc715cc624e9bd64ab/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-fragment-25.0.0.aar/dba44dec864e70dc715cc624e9bd64ab/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.0.0.aar/4c3be924edc9ecc392bcc73e55b5ba56/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.0.0.aar/4c3be924edc9ecc392bcc73e55b5ba56/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.0.0.aar/bfbcadedf729ea93465a491e810ffe0f/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.0.0.aar/bfbcadedf729ea93465a491e810ffe0f/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.0.0.aar/3d8cfff42f6db3ee4b4987346402a56f/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.0.0.aar/3d8cfff42f6db3ee4b4987346402a56f/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-compat-25.0.0.aar/5b7d9b6b483fff28b688f7c36d620c4a/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-compat-25.0.0.aar/5b7d9b6b483fff28b688f7c36d620c4a/AndroidManifest.xml:25:5-20
 	android:supportsRtl
 		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:10:9-35
 	android:label
@@ -82,7 +67,7 @@ ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/
 		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:17:13-56
 	android:name
 		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:15:13-39
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
 ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:20:17-68
@@ -120,36 +105,44 @@ uses-sdk
 INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
 INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:design:23.3.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/design-23.3.0.aar/a9bda5a28b8b1cc5db5d34cc73b22325/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:design:23.3.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/design-23.3.0.aar/a9bda5a28b8b1cc5db5d34cc73b22325/AndroidManifest.xml:20:5-43
-MERGED from [com.google.dagger:dagger-android-support:2.11] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.11.aar/05074f7322b1af36b7830ee8409b4f19/AndroidManifest.xml:18:3-42
-MERGED from [com.google.dagger:dagger-android-support:2.11] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.11.aar/05074f7322b1af36b7830ee8409b4f19/AndroidManifest.xml:18:3-42
-MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/260c4ba27b4781682ad3ca1f4d32a9b2/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/260c4ba27b4781682ad3ca1f4d32a9b2/AndroidManifest.xml:21:5-23:78
-MERGED from [com.google.dagger:dagger-android:2.11] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/dagger-android-2.11.aar/29fb5b4f812d0efd90a2752e1d022af4/AndroidManifest.xml:18:3-42
-MERGED from [com.google.dagger:dagger-android:2.11] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/dagger-android-2.11.aar/29fb5b4f812d0efd90a2752e1d022af4/AndroidManifest.xml:18:3-42
-MERGED from [com.android.support:animated-vector-drawable:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.0.0.aar/39753ba0abe6a07472fad1ef8e6fae0a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.0.0.aar/39753ba0abe6a07472fad1ef8e6fae0a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.0.0.aar/417ecf325a25e7350a71cd980b2c7634/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-vector-drawable:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.0.0.aar/417ecf325a25e7350a71cd980b2c7634/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:recyclerview-v7:23.3.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.3.0.aar/d09f5019d22db93eb67dfbb201ae9e6b/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.3.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.3.0.aar/d09f5019d22db93eb67dfbb201ae9e6b/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-v4-25.0.0.aar/0d57941de6b3a3200c7eb7c667a593a9/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-v4-25.0.0.aar/0d57941de6b3a3200c7eb7c667a593a9/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-fragment-25.0.0.aar/dba44dec864e70dc715cc624e9bd64ab/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-fragment-25.0.0.aar/dba44dec864e70dc715cc624e9bd64ab/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.0.0.aar/4c3be924edc9ecc392bcc73e55b5ba56/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.0.0.aar/4c3be924edc9ecc392bcc73e55b5ba56/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.0.0.aar/bfbcadedf729ea93465a491e810ffe0f/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.0.0.aar/bfbcadedf729ea93465a491e810ffe0f/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.0.0.aar/3d8cfff42f6db3ee4b4987346402a56f/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.0.0.aar/3d8cfff42f6db3ee4b4987346402a56f/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-compat-25.0.0.aar/5b7d9b6b483fff28b688f7c36d620c4a/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-compat-25.0.0.aar/5b7d9b6b483fff28b688f7c36d620c4a/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:design:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/fa41a8bf9a3423ec096fcbbd64d8c59a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/fa41a8bf9a3423ec096fcbbd64d8c59a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android-support:2.11] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.11.aar/5e77a3f366156f6c71eb0a16f1729196/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:dagger-android-support:2.11] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.11.aar/5e77a3f366156f6c71eb0a16f1729196/AndroidManifest.xml:18:3-42
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ef65b03129f0842419179cf467197385/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ef65b03129f0842419179cf467197385/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android:2.11] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/dagger-android-2.11.aar/689a38a1a5f33fa756bc5ba343a7aa3d/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:dagger-android:2.11] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/dagger-android-2.11.aar/689a38a1a5f33fa756bc5ba343a7aa3d/AndroidManifest.xml:18:3-42
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/ec1c65468228368bb095feed32b7ddaa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/ec1c65468228368bb095feed32b7ddaa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/e275d5c5eb0746f196e6ca803b955645/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/e275d5c5eb0746f196e6ca803b955645/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/a33bc5805cd233bb68070b1d13071096/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/a33bc5805cd233bb68070b1d13071096/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/e3f2992a2fc702c124f6cc4e6d2ae29a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/e3f2992a2fc702c124f6cc4e6d2ae29a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/119e3bff0556dcecd84a7d8eeb6f7c17/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/119e3bff0556dcecd84a7d8eeb6f7c17/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ed31ca4ace1859ed7fc20dd86ba93467/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ed31ca4ace1859ed7fc20dd86ba93467/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/667cbef6e383c207a4cb51c89f0876c0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/667cbef6e383c207a4cb51c89f0876c0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/124fd9ce2d4d0549a5711a30a2347c56/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/124fd9ce2d4d0549a5711a30a2347c56/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/5c08b1ac697a2eabf7aad5cde5288a64/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/5c08b1ac697a2eabf7aad5cde5288a64/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/15b81febde9c366b0eb5b0262d77b31f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/15b81febde9c366b0eb5b0262d77b31f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/92c99ae00d5030fcc80a0a7b90702c85/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/92c99ae00d5030fcc80a0a7b90702c85/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/456667328ec4585b621def3b9420c9dc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/456667328ec4585b621def3b9420c9dc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/d12724c600f894e292cd5ed82b478373/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/d12724c600f894e292cd5ed82b478373/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/736be82f09ed4917b48d531d2f2679c1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/736be82f09ed4917b48d531d2f2679c1/AndroidManifest.xml:20:5-44
 INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
 INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
-	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.0.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.0.0.aar/260c4ba27b4781682ad3ca1f4d32a9b2/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
 		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml

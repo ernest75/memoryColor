@@ -101,6 +101,9 @@ public class GameScreen extends AppCompatActivity {
 
         //getting reference of the menu of this activity
         mMenu = menu;
+
+        //Making sure that play icon it's displayed and more important has the same constantState variable
+        mMenu.getItem(0).setIcon(ContextCompat.getDrawable(mContext, android.R.drawable.ic_media_play));
         return true;
     }
 

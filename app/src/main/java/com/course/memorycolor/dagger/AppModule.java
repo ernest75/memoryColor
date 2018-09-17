@@ -21,19 +21,20 @@ public class AppModule {
     Application mApp;
 
 
-    public AppModule(Application app){ mApp = app; }
+    public AppModule(Application app){
+        mApp = app; }
 
     @Provides
     Application provideApplication(){ return mApp; }
 
     @Provides
     @Named("application_context")
-    Context provideAppContext(){ return mApp.getApplicationContext(); }
+    Context provideAppContext(){ return mApp ; }
 
     @Provides
     @Singleton
     ModelMemoryColor getModel(){
-        return new ModelMemoryColor(mApp.getApplicationContext());
+        return new ModelMemoryColor(provideAppContext());
     }
 
 

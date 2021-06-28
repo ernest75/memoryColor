@@ -1,153 +1,212 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
-MERGED from [com.android.support:design:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/fa41a8bf9a3423ec096fcbbd64d8c59a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.dagger:dagger-android-support:2.11] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.11.aar/5e77a3f366156f6c71eb0a16f1729196/AndroidManifest.xml:16:1-19:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ef65b03129f0842419179cf467197385/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.dagger:dagger-android:2.11] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/dagger-android-2.11.aar/689a38a1a5f33fa756bc5ba343a7aa3d/AndroidManifest.xml:16:1-19:12
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/ec1c65468228368bb095feed32b7ddaa/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/e275d5c5eb0746f196e6ca803b955645/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-v4:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/a33bc5805cd233bb68070b1d13071096/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/e3f2992a2fc702c124f6cc4e6d2ae29a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/119e3bff0556dcecd84a7d8eeb6f7c17/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ed31ca4ace1859ed7fc20dd86ba93467/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/667cbef6e383c207a4cb51c89f0876c0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/124fd9ce2d4d0549a5711a30a2347c56/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/5c08b1ac697a2eabf7aad5cde5288a64/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/15b81febde9c366b0eb5b0262d77b31f/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/92c99ae00d5030fcc80a0a7b90702c85/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/456667328ec4585b621def3b9420c9dc/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/d12724c600f894e292cd5ed82b478373/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/736be82f09ed4917b48d531d2f2679c1/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
+ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
+MERGED from [com.google.android.material:material:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/86d9f2e65dce60c678f89943df7c8071/material-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.dagger:dagger-android-support:2.11] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/8feefac8db8cfb8d888d3386d93b4925/jetified-dagger-android-support-2.11/AndroidManifest.xml:16:1-19:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/818c6e39ca3cc56f741085298f643fbe/appcompat-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.dagger:dagger-android:2.35.1] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/98774b5ffb7c00e3204d3f675a98d794/jetified-dagger-android-2.35.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/2ab9f694e5d3af64949140461960b743/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/01a78cf554e6c4441512374e19a94070/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/61bb6f920e68a1f2609cec17a2f1222a/vectordrawable-animated-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/0b0414ecf10825ce502c51b572029a70/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/cafdcb56cd064bbf622135f61bb6ed84/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/7cbfbaaa39ecb82620bffe2588206993/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/cf1b3659fa18f99466ae4aaa764a5b38/vectordrawable-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/ddb60fe35623f3ca3ef4dd6b3c236e2d/transition-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/fb1a0924cbad762d0f581f6d187fd952/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/c6e778544c3daa9334b7e39d7723ab0b/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/390fba7780f75f3935d6793c0cae2473/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/868c4b7ee3ddc9bf7e171c26bc1832bd/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/092a3e2c794826840c7bdfa866a4ff56/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/a47101ded039236e94007b8beb4d0848/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/02762fa41652d52d9fee565fa6e98d0d/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/c523d7266f112830516f47157eeaf9c5/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/c82a9eca41089f3a6896ea573cfccd87/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/9902be9b1aac21e364b85501bd7541d0/core-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/ab0971dc0418d312ad5e60792163f1ea/versionedparcelable-1.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/5a0ff6eba4a0ab8a5ff2db13b6b96742/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/2139d73c5146b0d9ccfa1f5b382f03a7/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/86c84a825357d05c2f724246490a8df6/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/ca96f6182f57510854af9a656e5790c4/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/b33061385d67b982bb885113b832fc1e/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/01df92b7300672a5ff8664dc3764ee51/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/d905bd4d37713ddb7e2a558cb611c465/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/5586921ae4cea2e46fb71f72d59033a3/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/0f9f9612216e1658ded37de1f7493c8e/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/db70915db5482881b82db5efafd295dc/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/e8a9ba95fcf0cc98ab87a4d17d4050b7/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.dagger:dagger-lint-aar:2.35.1] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/f9623ce6c4f0a18920c00aef16a3b1f1/jetified-dagger-lint-aar-2.35.1/AndroidManifest.xml:16:1-19:12
+INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
 	package
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:3:11-43
-		INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:3:11-43
+		INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
-		INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
+		INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
-		INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:2:1-43:12
+		INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.VIBRATE
-ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:4:5-65
+ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:4:5-65
 	android:name
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:4:22-63
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:4:22-63
 application
-ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:5:5-41:19
+ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:5:5-41:19
+MERGED from [com.google.android.material:material:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/86d9f2e65dce60c678f89943df7c8071/material-1.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/86d9f2e65dce60c678f89943df7c8071/material-1.0.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.core:core:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/9902be9b1aac21e364b85501bd7541d0/core-1.0.0/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/9902be9b1aac21e364b85501bd7541d0/core-1.0.0/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/ab0971dc0418d312ad5e60792163f1ea/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/ab0971dc0418d312ad5e60792163f1ea/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/9902be9b1aac21e364b85501bd7541d0/core-1.0.0/AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:9:9-41
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:9:9-41
 	android:icon
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:8:9-49
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:8:9-49
 	android:allowBackup
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:7:9-35
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:7:9-35
 	android:theme
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:11:9-40
 	android:name
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:6:9-43
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:6:9-43
 activity#com.course.memorycolor.GameScreen
-ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:13:9-24:20
+ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:13:9-24:20
 	android:label
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:16:13-45
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:16:13-45
 	android:launchMode
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:18:13-43
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:18:13-43
 	android:theme
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:17:13-56
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:17:13-56
 	android:name
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:15:13-39
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:15:13-39
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:19:13-23:29
+ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:20:17-68
+ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:20:17-68
 	android:name
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:20:25-66
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:22:17-76
+ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:22:17-76
 	android:name
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:22:27-74
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:22:27-74
 activity#com.course.memorycolor.SettingsActivity
-ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:25:9-27:62
+ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:25:9-27:62
 	android:label
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:27:13-60
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:27:13-60
 	android:name
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:26:13-45
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:26:13-45
 activity#com.course.memorycolor.PlayerData
-ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:28:9-32:20
+ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:28:9-32:20
 	android:name
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:28:19-45
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:28:19-45
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:29:13-31:68
+ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:29:13-31:68
 	android:value
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:31:17-66
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:31:17-66
 	android:name
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:30:17-63
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:30:17-63
 activity#com.course.memorycolor.RecordsGameActivity
-ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:33:9-40:20
+ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:33:9-40:20
 	android:label
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:35:13-64
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:35:13-64
 	android:theme
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:36:13-56
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:36:13-56
 	android:name
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml:34:13-48
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml:34:13-48
 uses-sdk
-INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
-INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:design:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/fa41a8bf9a3423ec096fcbbd64d8c59a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/fa41a8bf9a3423ec096fcbbd64d8c59a/AndroidManifest.xml:20:5-44
-MERGED from [com.google.dagger:dagger-android-support:2.11] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.11.aar/5e77a3f366156f6c71eb0a16f1729196/AndroidManifest.xml:18:3-42
-MERGED from [com.google.dagger:dagger-android-support:2.11] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.11.aar/5e77a3f366156f6c71eb0a16f1729196/AndroidManifest.xml:18:3-42
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ef65b03129f0842419179cf467197385/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ef65b03129f0842419179cf467197385/AndroidManifest.xml:20:5-44
-MERGED from [com.google.dagger:dagger-android:2.11] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/dagger-android-2.11.aar/689a38a1a5f33fa756bc5ba343a7aa3d/AndroidManifest.xml:18:3-42
-MERGED from [com.google.dagger:dagger-android:2.11] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/dagger-android-2.11.aar/689a38a1a5f33fa756bc5ba343a7aa3d/AndroidManifest.xml:18:3-42
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/ec1c65468228368bb095feed32b7ddaa/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/ec1c65468228368bb095feed32b7ddaa/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/e275d5c5eb0746f196e6ca803b955645/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/e275d5c5eb0746f196e6ca803b955645/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/a33bc5805cd233bb68070b1d13071096/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/a33bc5805cd233bb68070b1d13071096/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/e3f2992a2fc702c124f6cc4e6d2ae29a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/e3f2992a2fc702c124f6cc4e6d2ae29a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/119e3bff0556dcecd84a7d8eeb6f7c17/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/119e3bff0556dcecd84a7d8eeb6f7c17/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ed31ca4ace1859ed7fc20dd86ba93467/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ed31ca4ace1859ed7fc20dd86ba93467/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/667cbef6e383c207a4cb51c89f0876c0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/667cbef6e383c207a4cb51c89f0876c0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/124fd9ce2d4d0549a5711a30a2347c56/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/124fd9ce2d4d0549a5711a30a2347c56/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/5c08b1ac697a2eabf7aad5cde5288a64/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/5c08b1ac697a2eabf7aad5cde5288a64/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/15b81febde9c366b0eb5b0262d77b31f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/15b81febde9c366b0eb5b0262d77b31f/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/92c99ae00d5030fcc80a0a7b90702c85/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/92c99ae00d5030fcc80a0a7b90702c85/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/456667328ec4585b621def3b9420c9dc/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/456667328ec4585b621def3b9420c9dc/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/d12724c600f894e292cd5ed82b478373/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/d12724c600f894e292cd5ed82b478373/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/736be82f09ed4917b48d531d2f2679c1/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/ernestschneiderolcina/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/736be82f09ed4917b48d531d2f2679c1/AndroidManifest.xml:20:5-44
-INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
-INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/86d9f2e65dce60c678f89943df7c8071/material-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/86d9f2e65dce60c678f89943df7c8071/material-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android-support:2.11] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/8feefac8db8cfb8d888d3386d93b4925/jetified-dagger-android-support-2.11/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:dagger-android-support:2.11] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/8feefac8db8cfb8d888d3386d93b4925/jetified-dagger-android-support-2.11/AndroidManifest.xml:18:3-42
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/818c6e39ca3cc56f741085298f643fbe/appcompat-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/818c6e39ca3cc56f741085298f643fbe/appcompat-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android:2.35.1] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/98774b5ffb7c00e3204d3f675a98d794/jetified-dagger-android-2.35.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android:2.35.1] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/98774b5ffb7c00e3204d3f675a98d794/jetified-dagger-android-2.35.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/2ab9f694e5d3af64949140461960b743/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/2ab9f694e5d3af64949140461960b743/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/01a78cf554e6c4441512374e19a94070/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/01a78cf554e6c4441512374e19a94070/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/61bb6f920e68a1f2609cec17a2f1222a/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/61bb6f920e68a1f2609cec17a2f1222a/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/0b0414ecf10825ce502c51b572029a70/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/0b0414ecf10825ce502c51b572029a70/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/cafdcb56cd064bbf622135f61bb6ed84/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/cafdcb56cd064bbf622135f61bb6ed84/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/7cbfbaaa39ecb82620bffe2588206993/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/7cbfbaaa39ecb82620bffe2588206993/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/cf1b3659fa18f99466ae4aaa764a5b38/vectordrawable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/cf1b3659fa18f99466ae4aaa764a5b38/vectordrawable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/ddb60fe35623f3ca3ef4dd6b3c236e2d/transition-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/ddb60fe35623f3ca3ef4dd6b3c236e2d/transition-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/fb1a0924cbad762d0f581f6d187fd952/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/fb1a0924cbad762d0f581f6d187fd952/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/c6e778544c3daa9334b7e39d7723ab0b/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/c6e778544c3daa9334b7e39d7723ab0b/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/390fba7780f75f3935d6793c0cae2473/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/390fba7780f75f3935d6793c0cae2473/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/868c4b7ee3ddc9bf7e171c26bc1832bd/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/868c4b7ee3ddc9bf7e171c26bc1832bd/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/092a3e2c794826840c7bdfa866a4ff56/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/092a3e2c794826840c7bdfa866a4ff56/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/a47101ded039236e94007b8beb4d0848/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/a47101ded039236e94007b8beb4d0848/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/02762fa41652d52d9fee565fa6e98d0d/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/02762fa41652d52d9fee565fa6e98d0d/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/c523d7266f112830516f47157eeaf9c5/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/c523d7266f112830516f47157eeaf9c5/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/c82a9eca41089f3a6896ea573cfccd87/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/c82a9eca41089f3a6896ea573cfccd87/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/9902be9b1aac21e364b85501bd7541d0/core-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/9902be9b1aac21e364b85501bd7541d0/core-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/ab0971dc0418d312ad5e60792163f1ea/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/ab0971dc0418d312ad5e60792163f1ea/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/5a0ff6eba4a0ab8a5ff2db13b6b96742/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/5a0ff6eba4a0ab8a5ff2db13b6b96742/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/2139d73c5146b0d9ccfa1f5b382f03a7/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/2139d73c5146b0d9ccfa1f5b382f03a7/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/86c84a825357d05c2f724246490a8df6/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/86c84a825357d05c2f724246490a8df6/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/ca96f6182f57510854af9a656e5790c4/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/ca96f6182f57510854af9a656e5790c4/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/b33061385d67b982bb885113b832fc1e/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/b33061385d67b982bb885113b832fc1e/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/01df92b7300672a5ff8664dc3764ee51/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/01df92b7300672a5ff8664dc3764ee51/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/d905bd4d37713ddb7e2a558cb611c465/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/d905bd4d37713ddb7e2a558cb611c465/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/5586921ae4cea2e46fb71f72d59033a3/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/5586921ae4cea2e46fb71f72d59033a3/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/0f9f9612216e1658ded37de1f7493c8e/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/0f9f9612216e1658ded37de1f7493c8e/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/db70915db5482881b82db5efafd295dc/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/db70915db5482881b82db5efafd295dc/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/e8a9ba95fcf0cc98ab87a4d17d4050b7/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/e8a9ba95fcf0cc98ab87a4d17d4050b7/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-lint-aar:2.35.1] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/f9623ce6c4f0a18920c00aef16a3b1f1/jetified-dagger-lint-aar-2.35.1/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:dagger-lint-aar:2.35.1] /Users/ernestschneider/.gradle/caches/transforms-2/files-2.1/f9623ce6c4f0a18920c00aef16a3b1f1/jetified-dagger-lint-aar-2.35.1/AndroidManifest.xml:18:3-42
+INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/ernestschneiderolcina/Desktop/PROGRAMACIO/memoryColor/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ernestschneider/AndroidStudioProjects/memoryColor/app/src/main/AndroidManifest.xml

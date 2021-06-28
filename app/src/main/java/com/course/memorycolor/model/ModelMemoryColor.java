@@ -3,21 +3,13 @@ package com.course.memorycolor.model;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.TypedArray;
-import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.os.Vibrator;
 import android.preference.PreferenceManager;
-import android.support.v4.app.Fragment;
-import android.util.Log;
-import android.widget.Button;
-import android.widget.Toast;
 
 import com.course.memorycolor.R;
 import com.course.memorycolor.data.PlayerNameAndScoreHandler;
 
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 /**

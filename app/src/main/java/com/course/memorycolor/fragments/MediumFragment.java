@@ -2,8 +2,8 @@ package com.course.memorycolor.fragments;
 
 import android.content.Context;
 import android.database.Cursor;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,11 +14,9 @@ import android.widget.SimpleCursorAdapter;
 import com.course.memorycolor.R;
 import com.course.memorycolor.dagger.MemoryColor;
 import com.course.memorycolor.data.DataBaseHandler;
-import com.course.memorycolor.data.PlayerNameAndScoreHandler;
 import com.course.memorycolor.model.ModelMemoryColor;
 
 import javax.inject.Inject;
-import javax.inject.Named;
 
 /**
  * Created by Ernest on 11/10/2016.
